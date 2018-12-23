@@ -25,7 +25,7 @@
     <form id="form1" runat="server">
         <div id="PageWrapper">
             <header>
-                <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server" />
+                <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server"/>
                 <a href="Default.aspx">Heshy's Sandwiches</a>
             </header>
             <nav>
