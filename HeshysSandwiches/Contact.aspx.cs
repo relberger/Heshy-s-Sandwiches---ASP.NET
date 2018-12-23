@@ -25,6 +25,8 @@ namespace HeshysSandwiches
 
             SmtpClient smtpClient = new SmtpClient();
             smtpClient.Send(mail);
+
+            Response.Redirect("ContactResponse.aspx");
         }
 
         protected void NameField_TextChanged(object sender, EventArgs e)

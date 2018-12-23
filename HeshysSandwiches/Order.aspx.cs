@@ -14,17 +14,25 @@ namespace HeshysSandwiches
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-        }
-
-        protected void SandwichDropdown_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+       protected void PlaceOrderSubmit_Click(object sender, EventArgs e)
         {
+            string salad = SaladDropdown.SelectedValue;
+            string[] splitSalad = salad.Split('$');
+            double saladPrice = Convert.ToDouble(splitSalad[1]);
+            double sandwichPrice = Convert.ToDouble(SandwichSizeDropdown.SelectedValue);
+            double orderTotal = saladPrice + sandwichPrice;
 
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            connection.Open();
+            string insert = "insert into OrderInformation ([PaymentProcessed], [OrderTotal]) values('0', '" + orderTotal + "')";
+            SqlCommand command = new SqlCommand(insert, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            Response.Redirect("OrderResponse");
         }
     }
 }

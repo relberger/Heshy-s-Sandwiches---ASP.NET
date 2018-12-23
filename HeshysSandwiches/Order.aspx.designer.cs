@@ -13,15 +13,6 @@ namespace HeshysSandwiches {
     public partial class Order {
         
         /// <summary>
-        /// HeshysSandwichesDB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource HeshysSandwichesDB;
-        
-        /// <summary>
         /// SandwichLabel control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace HeshysSandwiches {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label SandwichLabel;
+        
+        /// <summary>
+        /// HeshysSandwichesDBSandwich control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource HeshysSandwichesDBSandwich;
         
         /// <summary>
         /// SandwichDropdown control.
@@ -92,6 +92,15 @@ namespace HeshysSandwiches {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label SaladLabel;
+        
+        /// <summary>
+        /// HeshysSandwichesDBSalad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource HeshysSandwichesDBSalad;
         
         /// <summary>
         /// SaladDropdown control.
@@ -200,5 +209,14 @@ namespace HeshysSandwiches {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PersonPhoneRequiredFieldValidator;
+        
+        /// <summary>
+        /// PlaceOrderSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PlaceOrderSubmit;
     }
 }
