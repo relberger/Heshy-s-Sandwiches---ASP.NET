@@ -1,0 +1,32 @@
+html, body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+p
+{
+	color: black;
+}
+h1
+{
+	color: black;
+}
+h2
+{
+	color: green;
+}
+label
+{
+	float: left;
+}
+a:link 
+{
+    color: blue;
+}
+a:hover 
+{
+    color: red;
+}
+span
+{
+	color: red;
+}

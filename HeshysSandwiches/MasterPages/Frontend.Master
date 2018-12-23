@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="Heshy_sSandwiches.MasterPages.Frontend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/Styles.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+    <link href="../Scripts/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link type="text/css" href="../jcarousel-master/examples/basic/jcarousel.basic.css" rel="stylesheet">
+    <script type="text/javascript" src="../jcarousel-master/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jcarousel-master/dist/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="../jcarousel-master/examples/basic/jcarousel.basic.js"></script>
+    <link type="text/css" href="../jVanilla/res/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="../jVanilla/res/css/jVanilla.css" rel="stylesheet" />
+    <script type="text/javascript" src="../jVanilla/res/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../jVanilla/res/js/jquery.jVanilla.js"></script>
+    <script type="text/javascript" src="../jVanillaMenu.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+            <header>
+                <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server" />
+                <a href="Default.aspx">Heshy's Sandwiches</a>
+            </header>
+            <nav>
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+            </nav>
+            <section id="MainContent">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                <br />
+                <asp:Label ID="VisitorName" runat="server"></asp:Label>
+                <br />
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <aside id="Sidebar"></aside>
+            <footer>© 2018-<%= DateTime.Now.Year.ToString()%> Heshy Elberger</footer>
+        </div>
+    </form>
+</body>
+</html>
