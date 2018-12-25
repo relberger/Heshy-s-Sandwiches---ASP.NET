@@ -26,7 +26,7 @@
         <div id="PageWrapper">
             <header>
                 <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server" />
-                <a href="Default.aspx">Heshy's Sandwiches</a>
+                <a href="~/Default.aspx" runat="server">Heshy's Sandwiches</a>
             </header>
             <nav>
                 <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">

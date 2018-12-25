@@ -133,6 +133,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Errors\Error404.aspx" />
+    <Content Include="Errors\OtherErrors.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -353,6 +355,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errors\Error404.aspx.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\Error404.aspx.designer.cs">
+      <DependentUpon>Error404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Errors\OtherErrors.aspx.cs">
+      <DependentUpon>OtherErrors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\OtherErrors.aspx.designer.cs">
+      <DependentUpon>OtherErrors.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
