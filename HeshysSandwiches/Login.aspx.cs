@@ -20,41 +20,7 @@ namespace HeshysSandwiches
 
         protected void Login1_Authenticate1(object sender, AuthenticateEventArgs e)
         {
-            
-                //string userName = Login1.UserName;
-                //string password = Login1.Password;
-
-                //bool result = UserLogin(userName, password);
-                //if ((result))
-                //{
-                //    e.Authenticated = true;
-                //}
-                //else
-                //{
-                //    e.Authenticated = false;
-                //}
-            
+         
         }
-
-        //protected void ValidateUser(object sender, EventArgs e)
-        //{
-        //    string userID;
-        //    string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-
-        //    using (SqlConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        using (SqlCommand command = new SqlCommand("Validate_User"))
-        //        {
-        //            command.CommandType = CommandType.StoredProcedure;
-        //            command.Parameters.AddWithValue("@Username", Login1.UserName);
-        //            command.Parameters.AddWithValue("@Password", Login1.Password);
-
-        //            command.Connection = connection;
-        //            connection.Open();
-        //            userID = command.ExecuteScalar().ToString();
-        //            connection.Close();
-        //        }
-        //    }
-        //}
     }
 }

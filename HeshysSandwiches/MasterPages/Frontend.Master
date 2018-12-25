@@ -25,7 +25,7 @@
     <form id="form1" runat="server">
         <div id="PageWrapper">
             <header>
-                <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server"/>
+                <asp:Image ID="Logo" ImageUrl="Heshy'sSandwichesLogo.png" runat="server" />
                 <a href="Default.aspx">Heshy's Sandwiches</a>
             </header>
             <nav>
@@ -41,8 +41,17 @@
                 <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </section>
-            <aside id="Sidebar"></aside>
-            <footer>© 2018-<%= DateTime.Now.Year.ToString()%> Heshy Elberger</footer>
+            <aside id="Sidebar">
+            </aside>
+            <footer>
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                <br />
+                © 2018-<%= DateTime.Now.Year.ToString()%> Heshy Elberger
+            </footer>
         </div>
     </form>
 </body>
