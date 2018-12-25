@@ -3,9 +3,9 @@
   <siteMapNode url="~/" title="Home"  description="Home">
     <siteMapNode url="~/Default" title="Home"  description="Homepage" />
     <siteMapNode url="~/Contact" title="Contact Us"  description="Contact Us" />
-    <siteMapNode url="#" title="Menu"  description="Menu" />
+    <siteMapNode url="~/Menu" title="Menu"  description="Menu" />
     <siteMapNode url="##" title="Login"  description="Login" />
     <siteMapNode url="~/Order" title="Place Order"  description="Place Order" />
-    <siteMapNode url="~/ViewOrders" title="View All Orders"  description="View All Orders" />
+    <siteMapNode url="~/OrderVIew/ViewOrders" title="View All Orders"  description="View All Orders" />
   </siteMapNode>
 </siteMap>
