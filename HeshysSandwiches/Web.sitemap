@@ -6,6 +6,6 @@
     <siteMapNode url="~/Menu" title="Menu"  description="Menu" />
     <siteMapNode url="~/Login" title="Login"  description="Login" />
     <siteMapNode url="~/Order" title="Place Order"  description="Place Order" />
-    <siteMapNode url="~/OrderVIew/ViewOrders" title="View All Orders"  description="View All Orders" />
+    <siteMapNode url="~/OrderView/ViewOrders" title="View All Orders"  description="View All Orders" />
   </siteMapNode>
 </siteMap>

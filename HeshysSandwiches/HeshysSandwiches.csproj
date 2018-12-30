@@ -279,6 +279,7 @@
     <Content Include="jVanilla\__MACOSX\res\._css" />
     <Content Include="jVanilla\__MACOSX\res\._js" />
     <Content Include="jVanilla\__MACOSX\res\css\._bg" />
+    <Content Include="App_Themes\GridView\GridView.skin" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="MasterPages\Heshy%27sSandwichesLogo.png" />
     <Content Include="Menu.aspx" />
